@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+	<link type="text/css" rel="stylesheet" href="../static/css/indexButtonStyle.css"/>
+	<link rel="stylesheet" type="text/css" href= "{{ url_for('static', filename = 'css/indexButtonStyle.css') }}">
+</head>
+<body>
+	<div class="buttonbox">
+		<form action="/trainid_search/" method="post">
+			<button class = "class-searchinfo" name="Trainid" type="submit">查询列车班次</button>
+		</form>
+		<form action="/userid_search/" method="post">
+			<button class = "class-searchinfo" name="userid" type="submit">查询所有用户</button>
+		</form>	
+		<form action="/userbyinfo_search/" method="post">
+			<button class = "class-searchinfo" name="userbyinfo" type="submit">查询所有购买记录</button>
+		</form>	
+		<form action="/userUnbyinfo_search/" method="post">
+			<button class = "class-searchinfo" name="userUnbyinfo" type="submit">查询所有退票记录</button>
+		</form>	
+		<form action="/" method="post">
+			<button class = "class-searchinfo" name="search" type="submit">返回</button>
+		</form>	
+	</div>
+		<pre style="border: solid;width:inherit;height:500px;margin: 0 auto;margin-top: 20px;text-align: center">{{back}}</pre>
+</body>
+</html>

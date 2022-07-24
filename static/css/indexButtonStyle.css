@@ -1,0 +1,18 @@
+@charset "utf-8";
+/* CSS Document */
+.class-searchinfo{
+	height: 40px;
+	width: 500px;
+	margin-top: 20px;
+}
+.buttonbox{
+	width: 500px;
+	margin: 0 auto;
+	margin-top: 20px;
+}
+.class-inputinfo{
+	width: 450px;
+	height: 30px;
+	margin-left: 15px;
+	margin-top: 20px;
+}

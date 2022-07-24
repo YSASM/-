@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+	<link type="text/css" rel="stylesheet" href="../static/css/indexButtonStyle.css"/>
+	<link rel="stylesheet" type="text/css" href= "{{ url_for('static', filename = 'css/indexButtonStyle.css') }}">
+</head>
+
+<body>
+	<div class="buttonbox">
+		<div style="border: solid">
+			<div style="border: solid;text-align: center;">购买车票</div>
+			<form action="/buy_add/" method="post">
+				 车次:<br>
+				<input class="class-inputinfo" type="text" name="Trainid" maxlength="6">
+				<br>
+				 购买人姓名:<br>
+				<input class="class-inputinfo" type="text" name="username" maxlength="10">
+				<br>
+				 购买人性别:<br>
+				<input class="class-inputinfo" type="text" name="xingbie" maxlength="1">
+				<br>
+				 购买人身份证:<br>
+				<input class="class-inputinfo" type="text" name="userid" maxlength="20">
+				<br>
+				 购买人电话:<br>
+				<input class="class-inputinfo" type="text" name="phone" maxlength="15">
+				<br>
+				 购买数量:<br>
+				<input class="class-inputinfo" type="text" name="dingpiaoshu" maxlength="2">
+				<br>
+				 购票渠道:<br>
+				<input class="class-inputinfo" type="text" name="dingpiaoqudao" maxlength="5">
+				<br>
+				<input class = "class-searchinfo" type="submit"  value="提交">
+			</form>
+			<pre style="text-align: center">{{error}}</pre>
+		</div>
+		<form action="/" method="post">
+			<button class = "class-searchinfo" name="search" type="submit">返回</button>
+		</form>
+	</div>
+</body>
+</html>

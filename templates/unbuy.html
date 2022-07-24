@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+	<link type="text/css" rel="stylesheet" href="../static/css/indexButtonStyle.css"/>
+	<link rel="stylesheet" type="text/css" href= "{{ url_for('static', filename = 'css/indexButtonStyle.css') }}">
+</head>
+
+<body>
+	<div class="buttonbox">
+		<div style="border: solid">
+			<div style="border: solid;text-align: center;">退票</div>
+			<form action="/unbuy_add/" method="post">
+				 输入编号:<br>
+				<input class="class-inputinfo" type="text" name="id" maxlength="4">
+				<input class = "class-searchinfo" type="submit"  value="提交">
+			</form>
+			<form action="/" method="post">
+			<button class = "class-searchinfo" name="search" type="submit">返回</button>
+		</form>
+		</div>
+	</div>
+	<pre style="border: solid;width:inherit;height:500px;margin: 0 auto;margin-top: 20px;text-align: center">{{back}}</pre>
+</body>
+</html>
